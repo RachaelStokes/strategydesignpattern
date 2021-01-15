@@ -18,12 +18,16 @@ public abstract class Player {
 
     public String play() {
        if(defence){ 
+           if (defenceBehavior == null){
+               return "not playing";
+           }
             return this.defenceBehavior.play();
 
        }
        else {
             return this.offenceBehavior.play();
        }
+       
        
     }
     

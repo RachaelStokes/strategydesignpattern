@@ -11,6 +11,6 @@ public class Receiver extends Player{
     }
 
     public void setDefenceBehavior() {
-        this.defenceBehavior = new NullBehavior();
+        this.defenceBehavior = null;
     }
 }
